@@ -8,6 +8,7 @@ int eliminate(Matrix *mat, Matrix *b){
     /**
   	 * Tutaj należy umieścić właściwą implemntację.
 		 */
+		 //tu pisze anton sldmasldmsamd
 
 		return 0;
 }
