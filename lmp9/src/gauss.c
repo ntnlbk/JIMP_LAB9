@@ -9,7 +9,7 @@ int eliminate(Matrix *mat, Matrix *b){
     /**
   	 * Tutaj należy umieścić właściwą implemntację.
 		 */
-		 printf("from eliminate: \n");
+		 //printf("from eliminate: \n");
 		 int i, j;
 		 for (i = 0; i < (mat->c - 1); i++){
 		 	double maks = fabs(mat->data[i][i]);
@@ -22,7 +22,7 @@ int eliminate(Matrix *mat, Matrix *b){
 		 	}
 		 	//printf("W kolumne %d najw. to %g w wiersze %d\n", i, maks, maksr);
 		 	if (maksr != i){
-		 		printf("swap wiersz %d i %d\n", i, maksr);
+		 		//printf("swap wiersz %d i %d\n", i, maksr);
 		 		//printToScreen(mat);
 		 		double *temp = mat->data[i];
 		 		mat->data[i] = mat->data[maksr];
@@ -31,9 +31,7 @@ int eliminate(Matrix *mat, Matrix *b){
 		 		temp = b->data[i];
 		 		b->data[i] = b->data[maksr];
 		 		b->data[maksr] = temp;
-		 	} else{
-		 		printf("swap nie trzeba\n");
-		 	}
+		 	} 
 		 	
 		 	double gl = mat->data[i][i];
 		 	for(j = i+1; j< mat->c; j++){
@@ -47,8 +45,8 @@ int eliminate(Matrix *mat, Matrix *b){
 		 	
 		 	
 		 }
-		printToScreen(mat);
-		printf("end eliminate: \n");
+		//printToScreen(mat);
+		//printf("end eliminate: \n");
 		return 0;
 }
 
